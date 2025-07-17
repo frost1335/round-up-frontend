@@ -1,0 +1,5 @@
+export { default as HomeIcon } from './Home.svg'
+export { default as TransferIcon } from './Transfer.svg'
+export { default as PaymentsIcon } from './Payments.svg'
+export { default as ServicesIcon } from './Services.svg'
+export { default as CashFlowIcon } from './Cash-Flow.svg'

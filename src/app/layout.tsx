@@ -29,7 +29,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="container mx-auto w-[360px] h-[700px] bg-gradient-to-b from-[#02D0D3] to-[#00B4B7]">
+        <div className="container mx-auto w-[360px] h-[700px] bg-gradient-to-b bg-[50% 50%] from-[#02D0D3] to-[#00B4B7] rounded-2xl overflow-hidden shadow-lg">
           <div className="relative flex flex-col h-full">
             <main className="flex-1 overflow-y-auto">
               <TopNav />

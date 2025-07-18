@@ -13,7 +13,7 @@ const link = [
 
 function BottomMenu() {
     return (
-        <div className='absolute px-4 py-2 bottom-0 left-0 right-0 bg-[#FFFFFF] shadow-md'>
+        <div className='absolute px-4 py-2 bottom-0 left-0 right-0 bg-[#FFFFFF] shadow-[0_-2px_8px_rgba(0,0,0,0.1)] z-auto'>
             <ul className='flex justify-between text-xs text-center'>
                 {link.map(({ name, icon, href }) => (
                     <li key={name} >

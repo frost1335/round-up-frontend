@@ -8,7 +8,7 @@ function TopNav() {
     return (
         <div className='absolute flex top-0 right-0 left-0 justify-between items-center py-6 px-4 bg-transparent'>
             <div>
-                <Link href='/' className='p-3 flex rounded-full bg-white'>
+                <Link href='/profile' className='p-2 flex rounded-full bg-white'>
                     <Image src={ProfileIcon} alt='Profile' width={16} height={16} />
                 </Link>
             </div>

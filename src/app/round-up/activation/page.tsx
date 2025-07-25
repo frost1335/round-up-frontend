@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
 import { RoundUpIcon, TBCIcon } from '../icons'
 import Image from 'next/image'
+import { Checkbox } from '@/components/ui/checkbox'
 
 function page() {
     return (
@@ -24,9 +25,13 @@ function page() {
                 <p className='flex items-center gap-3 text-neutral-900 font-semibold font-sans text-xl'><Image className='h-8 w-8' src={TBCIcon} alt="TBC Icon" /> TBC DEPOSIT</p>
             </main>
             <footer className='w-full px-3 py-7'>
-                <button className='w-full px-3 py-3 rounded-xl bg-[#2ACED0] cursor-pointer'>
+                <div className='px-2 mb-6'>
+                    <Checkbox className='border-[#2ACED0] checked:bg-[#2ACED0] border-2 text-lg' id="round-up" aria-label='Enable Round-Up' />
+                    <label htmlFor="round-up" className='text-sm font-medium ml-2 text-neutral-600'>I accept the terms of `TBC Deposit`</label>
+                </div>
+                <Link href="/round-up/configuration" className='flex justify-center w-full px-3 py-3 rounded-xl bg-[#2ACED0] cursor-pointer'>
                     <span className='text-white font-semibold'>Activate Now</span>
-                </button>
+                </Link>
             </footer>
         </div>
     )

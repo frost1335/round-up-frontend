@@ -28,9 +28,9 @@ function page() {
                 </div>
             </main>
             <footer className='mt-auto w-full px-3 py-7'>
-                <button className='w-full px-3 py-3 rounded-xl bg-[#0D0721]'>
+                <Link href={"/round-up/activation"} className='flex justify-center w-full px-3 py-3 rounded-xl bg-[#0D0721]'>
                     <span className='text-[#00C0C9] font-semibold'>Next</span>
-                </button>
+                </Link>
             </footer>
         </div>
     )
